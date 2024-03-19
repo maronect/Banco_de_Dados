@@ -40,3 +40,19 @@
 
 <h3>Especialização</h3>
 <p> A entidade <b>Pessoa</b> gera váriso subtipos: Familiares, Aluno, Professor, Tecnico, Zelador e Proficional de Saúde. Todos estes apresentam, em comum, os atributos referentes a pessoas, mas divergem a depender de sua <b>especialização</b>, adquirindo relacionamentos e atributos específicos.
+
+<h3>Explicação das escolhas de entidades</h3>
+
+<p><b>Aluno</b>, <b>Professor</b>, <b>Disciplina</b> e <b>Matrícula</b> foram indicados a serem criados como obrigatórios, centralizando a ideia de ambiente escolar.</p>
+
+<p><b>Matrícula</b> e <b>Mensalidade</b> são as possiveis vias de pagamento feitas pelos familiares responsaveis pelo aluno. Tal pagamento é direcionado à entidade responsavel por administrar e coordenar os recurssos, pessoas e unidade de ensino como um todo, a <b>gestão administrativa</b>.</p>
+
+<p>Entre os coordenados por esta:</p>
+
+<p><b>Recursos</b> seriam: reformas estruturais na isntituição, transporte, quanto a mobilidade dos alunos até a escola e para passeios fora desta, energéticos, para internet, energia, no geral, e equipamentos eléticos, como cantina e tomadas, alimentícios, referente à lanchonete e materiais educativos para equipamentos voltados ao ensino motor em aulas práticas como objetos relacionados a arte, tecnologia, entre outros.</p>
+
+<p>A estrutura de ensino correspode ao ambiente em que as pessoas estariam presente durante o periodo estudantil.</p>
+
+<p>A entidade <b>Pessoas</b> merece destaque.</p>
+
+<p>Nesta caracteristicas em comum para: Alunos, os estudantes, Familiares, responsaveis pelo pagamento e manutenção dos alunos na instituição de ensino, Professores, os que mentorarão as aulas, Técnicos, responsaveis por fazer a manutenção de plataformas digitais, Proficionais de saúde, proficionais que manterão a saude física e mental dos presentes na instituição e zeladores, os quais proverão a manutenção da integridade física da estrutura de ensino, estarão agrupadas. Entre as caracteristicas comumente presente entre as pessoas: Nome, Contato, Endereço, Documento de Identificação, Usuário Online, Senha Oline, sendo estes responsaveis pelo acesso á plataformas disponiveis na internet, relacionadas a instituição; salário e horas de trabalho, para proficionais que rootineiramente dedicam seu tempo ao grupo de ensino. </p>
