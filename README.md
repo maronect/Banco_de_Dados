@@ -13,27 +13,24 @@
 
 <p>Professor.
 <p> Disciplina: Sala, Grade{Turno, Horário}.
-<p>Aluno: Grade Curricular, Turma, Boletim, Méritos (medalhas e premições em olimpiadas, competições e afins).
-<p>Familiar (Responsavel pelo pagamento da mensalidade e matícula).
-<p>Mensalidade (Pagamento para manutenção do aluno na unidade de estudo).
-<p>Matrícula: Documento{Identidade, Visto, Passaporte}, Foto 3/4, Comprovante de Residência, Pagamento, Desconto, Certidão de Nascimento, Histórico Escolar.
-<p> Gestão Administrativa.
-<p>Recursos: Manutenção Estrutural, Trasnporte{Viagens Coletivas, Condução}, Energéticos, Alimentícios, Materiais Educativos.
-<p>Estrutura Escolar: Nome, Localização{País, Estado, Cidade, Bairro, CEP}.
+<p>Aluno: Grade Curricular, Turma, Boletim/Notas, Méritos (medalhas e premições em olimpiadas, competições e afins), Documento de Identificação, Foto 3/4, Comprovante de Residência, Pagamento, Desconto, Certidão de Nascimento, Histórico Escolar.
+<p>Familiar (Responsavel pelo pagamento dos valores(matrícula, mensalidade e atividades extracurriculares: Artes, Robótica, Esportes e Aulas de Reforço)).
+<p> Gestões Administrativas(Responsavel pelo histórico de alunos e pelas notas fiscais relacionadas a: Eventos, Manutenção Estrutural, Trasnporte{Viagens Coletivas, Condução}, Energéticos, Alimentícios e Materiais Educativos).
+<p>Estrutura de Ensino: Nome, Localização{País, Estado, Cidade, Bairro, CEP}.
 <p>Pessoas:Nome{P_nome, S_nome}, Contato, Endereço, Documento de Identificação, Usuário Online, Senha Online, Horário de Trabalho, Salário.
-<p>Técnicos.
+<p>Técnicos:Usuário Online de Adminsitrador e Senha Online de Administrador.
 <p>Plataformas Digitais: Endereço(URL).
-<p>Profissional de saúde.
-<p>Zeladores.
+<p>Profissional de saúde: Equipamentos de Saúde Atribuidos(Imobilizadores e Macas).
+<p>Zeladores: Equipamentos de Manutenção atribuidos: Panos, Rodos, Vassouras, Baldes e Uniforme.
 
 <h3>Relacionamentos e cardinalidades entre entidades</h3>
 
 <p> Professor <b>ensina</b> uma ou mais Disciplinas. Estas necessitam de um ou mais professores para serem ensinadas.
 <p> Disciplina <b>é estudada</b> por um ou mais Alunos e um aluno estuda uma ou mais disciplinas
 <p> Aluno <b>depende</b> de um familiar, e um familiar pode ter 1 ou mais alunos como dependente
-<p> Familiar pode <b>efetuar</b> no mínimo uma matrícula ou mensalidade. Já uma mensalidade ou matrícula apenas pode ser feita por uma família.
-<p> Apenas uma Matrícula e Mensalidade são <b>administradas</b> pela gestão administrativas. Enquanto a gestão administrativa pode administrar tanto uma matrícula ou mensalidade, quanto várias.
-<p> Gestão adminsitrativa <b>coordena</b> de um/uma a vários Recurssos, Pessoas, e Estrutura Estrutura de Ensino. Já os recursos, pessoas e a estrutura de ensino só podem ser coordenado por uma gestão administrativa.  
+<p> Familiar pode <b>Pagar</b> um ou mais valores, podendo ser este: a mensalidade, a matrícula ou referente a atividades extracurriculares(Artes, Robótica, Esportes e Aulas de Reforço). Enquanto As gestões administrativas podem receber um ou mais de um valor como pagamento.
+<p> Gestões adminsitrativas <b>coordenam</b> de uma a várias Pessoas. Já as pessoas só podem ser coordenadas apenas por uma gestão administrativa.
+<p> Gestões adminsitrativas <b>administram</b> uma estrutura de ensino. Já uma estrutura de ensino pode ser anminsitrada por uma ou mais gestões admnistrativas.
 <p> Profissional de saúde pode <b>prestar atendimento</b> a tanto nenhuma quanto várias pessoas, enquanto as pessoas podem tanto não ser atendiadas, caso não precisem, quanto serem atendidas por vários.
 <p>Técnicos podem <b>prestam manutenção</b> tanto a 1 plataforma das plataformas digitais quanto para várias. Assim como uma unica plataforma pode receber manutencão de vários técnicos.
 <p>Zeladores <b>mantêm a integridade</b> de apenas uma estrutura de ensino. Enquanto uma estrutura de ensino pode receber manutenção de 1 ou mais zeladores.
@@ -45,11 +42,11 @@
 
 <p><b>Aluno</b>, <b>Professor</b>, <b>Disciplina</b> e <b>Matrícula</b> foram indicados a serem criados como obrigatórios, centralizando a ideia de ambiente escolar.</p>
 
-<p><b>Matrícula</b> e <b>Mensalidade</b> são as possiveis vias de pagamento feitas pelos familiares responsaveis pelo aluno. Tal pagamento é direcionado à entidade responsavel por administrar e coordenar os recurssos, pessoas e unidade de ensino como um todo, a <b>gestão administrativa</b>.</p>
+<p><b>Matrícula</b>, <b>Mensalidade</b> e as <b>Atividades Extracurriculares</b> são os possiveis pagamentos realizados pelos familiares responsaveis pelo aluno. Tal pagamento é direcionado à entidade responsavel por administrar e coordenar as pessoas e a unidade de ensino como um todo, as <b>gestões administrativas</b>.</p>
 
-<p>Entre os coordenados por esta:</p>
+<p>A gestão administrativa tem o controle do histórico de alunos e na geração de nota fiscal. Esta nota fiscal seria referente a:</p>
 
-<p><b>Recursos</b> seriam: reformas estruturais na isntituição, transporte, quanto a mobilidade dos alunos até a escola e para passeios fora desta, energéticos, para internet, energia, no geral, e equipamentos eléticos, como cantina e tomadas, alimentícios, referente à lanchonete e materiais educativos para equipamentos voltados ao ensino motor em aulas práticas como objetos relacionados a arte, tecnologia, entre outros.</p>
+<p>Reformas estruturais na isntituição, transporte, quanto a mobilidade dos alunos até a escola e para passeios fora desta, energéticos, para internet, energia, no geral, e equipamentos eléticos, como cantina e tomadas, alimentícios, referente à lanchonete e materiais educativos para equipamentos voltados ao ensino motor em aulas práticas como objetos relacionados a arte, tecnologia, entre outros.</p>
 
 <p>A estrutura de ensino correspode ao ambiente em que as pessoas estariam presente durante o periodo estudantil.</p>
 
